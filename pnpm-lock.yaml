@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ai-sdk/anthropic':
+        specifier: ^0.0.50
+        version: 0.0.50(zod@3.23.8)
       '@ai-sdk/openai':
         specifier: ^0.0.53
         version: 0.0.53(zod@3.23.8)
@@ -149,6 +152,12 @@ importers:
         version: 5.6.2
 
 packages:
+
+  '@ai-sdk/anthropic@0.0.50':
+    resolution: {integrity: sha512-++mqmFcUoQgjoCchAU6eVG3QfKdwkeJVNdMZ+jUiNdawn8diA6BlARlu7xFT4F7W3bcStfYv4hK1jwRyzAQtCg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: ^3.0.0
 
   '@ai-sdk/openai@0.0.53':
     resolution: {integrity: sha512-Wm4+EYG2Zl5WmhvZJrLhrBY+C46FEQmDjQ9ZB5h2DvRoJZNKtNiVNFMEQuyBK7QwivvlCSMJkPRBfFcbJgNLMQ==}
@@ -2218,6 +2227,12 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
 snapshots:
+
+  '@ai-sdk/anthropic@0.0.50(zod@3.23.8)':
+    dependencies:
+      '@ai-sdk/provider': 0.0.23
+      '@ai-sdk/provider-utils': 1.0.19(zod@3.23.8)
+      zod: 3.23.8
 
   '@ai-sdk/openai@0.0.53(zod@3.23.8)':
     dependencies:
